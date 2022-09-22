@@ -8,7 +8,9 @@ const routes = (app) => {
 
     app.use(
         express.json(),
-        games
+        games,
+        autores, 
+        produtoras
     )
 }
 

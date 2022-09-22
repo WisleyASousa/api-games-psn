@@ -5,6 +5,11 @@ const router = express.Router();
 
 router
     .get("/games", GameController.listarGames)
+    .get("/games/:id", GameController.listarGamesID)
+    .post("/games", GameController.CadastrarGames)
+    .put("/games/:id", GameController.AtualizarGames)
+    .delete("/games", GameController.ExcluirGames)
 
 
-export default router
+
+export default router;
